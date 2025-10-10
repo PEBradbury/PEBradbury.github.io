@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Bradbury for Caerdydd Penarth</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E4003B',
+                        primaryDark: '#9F0029',
+                        primaryLight: '#FF5C7F'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('https://i.imgur.com/zatwPYv.jpegg');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-link {
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .policy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(228, 0, 59, 0.2);
+        }
+        .active-nav {
+            color: #E4003B;
+            border-bottom-color: #E4003B;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-primaryDark shadow-md z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+                <img class="h-8 w-auto" src="https://i.imgur.com/IHPPebe.png" alt="Campaign Logo">
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="hidden sm:flex sm:ml-6 sm:space-x-8">
+            <a href="#home" class="nav-link flex flex-col items-center justify-center text-sm font-medium">
+                <span><b>Home</b></span>
+                <span class="italic text-xs">Cartref</span>
+            </a>
+            <a href="#about" class="nav-link flex flex-col items-center justify-center text-sm font-medium">
+                <span><b>About</b></span>
+                <span class="italic text-xs">Ynghylch</span>
+            </a>
+            <a href="#pledges" class="nav-link flex flex-col items-center justify-center text-sm font-medium">
+                <span><b>Pledges</b></span>
+                <span class="italic text-xs">Addewidion</span>
+            </a>
+            <a href="#people" class="nav-link flex flex-col items-center justify-center text-sm font-medium">
+                <span><b>Endorsements</b></span>
+                <span class="italic text-xs">Ardystiadau</span>
+            </a>
+            <a href="#contact" class="nav-link flex flex-col items-center justify-center text-sm font-medium">
+                <span><b>Contact</b></span>
+                <span class="italic text-xs">Cysylltwch</span>
+            </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="-mr-2 flex items-center sm:hidden">
+            <button type="button" aria-controls="mobile-menu" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-primaryLight hover:bg-primary/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+                <i data-feather="menu" class="h-6 w-6"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Mobile menu -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#" class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium text-white hover:underline">Home | Cartref</a>
+                <a href="#about" class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium text-white hover:underline">About | Ynghylch</a>
+                <a href="#pledges" class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium text-white hover:uderline">Pledges | Addewidion</a>
+                <a href="#events" class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium text-white hover:underline">Endorsements | Ardystiadau</a>
+                <a href="#contact" class="block pl-3 pr-4 py-2 border-l-4 text-base font-medium text-white hover:underline">Contact | Cysylltwch</a>
+                <div class="mt-4 pl-3">
+                    <button class="bg-primary hover:bg-primaryDark text-white px-4 py-2 rounded-md text-sm font-medium w-full transition duration-300">
+                        Donate Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Hero Section -->
+
+<!-- Hero Section -->
+<section id="home">
+    <div id="vanta-bg" class="hero-bg min-h-screen flex items-end justify-center text-white pt-16 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Title -->
+            <h1 class="text-4xl md:text-6xl font-bold mb-2 mx-auto inline-block" data-aos="fade-up" data-aos-delay="100">
+                Peter Bradbury • Caerdydd Penarth
+            </h1>
+
+            <!-- English line below title -->
+            <p class="text-xl md:text-2xl mt-1 mx-auto" style="max-width: fit-content;" data-aos="fade-up" data-aos-delay="150">
+                Your chance to have an authentic working class voice as your senedd candidate.
+            </p>
+
+            <!-- Welsh line below title -->
+            <p class="text-xl md:text-2xl mt-1 mx-auto" style="max-width: fit-content;" data-aos="fade-up" data-aos-delay="200">
+                Eich cyfle i gael lleferydd dosbarth gweithwyr dilys fel eich ymgeisydd seneddol.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6 mb-4" data-aos="fade-up" data-aos-delay="250">
+                <a href="#contact" class="bg-primary hover:bg-primaryDark text-white px-8 py-3 rounded-md text-lg font-medium transition duration-300">
+                    Volunteer | Gwirfoddolwr
+                </a>
+                <a href="#about" class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-md text-lg font-medium transition duration-300">
+                    Learn More | Dysgu mwy
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+      <!-- LEFT COLUMN: Text -->
+      <div data-aos="fade-right" class="flex flex-col">
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          About Peter | <i>Am Peter</i>
+        </h2>
+        <p class="mt-3 text-lg text-gray-500">
+          I am 43 years old and have been a member of the Labour Party for over 20 years. I've been a Trade Unionist for the same period including a spell as a Union Representative.  I worked for Kevin Brennan for 16 years and for Alex Barros-Curtis MP since last year's General Election. 
+I have also been a Campaign Co-Ordinator, Membership Secretary, Vice Chair and Trade Union Officer for Cardiff West Constituency Labour Party, campaigning and helping run the campaigns of the CLP in every election since 2004.    
+        </p>
+<p class="mt-3 text-lg text-gray-500">
+<i>Rwy’n 43 oed ac wedi bod yn aelod o’r Blaid Lafur ers dros 20 mlynedd. Rwyf wedi bod yn Undebwr Llafur yn ystod yr un cyfnod gan gynnwys cyfnod fel Cynrychiolydd Undeb. Gweithiais i Kevin Brennan am 16 mlynedd ac i Alex Barros-Curtis AS ers Etholiad Cyffredinol y llynedd. Rwyf hefyd wedi bod yn Gydlynydd Ymgyrchoedd, Ysgrifennydd Aelodaeth, Is-Gadeirydd ac yn Swyddog Undebau Llafur ar gyfer Etholaeth Plaid Lafur Gorllewin Caerdydd, gan ymgyrchu ac helpu i redeg ymgyrchoedd yn yr etholaeth ym mhob etholiad ers 2004.</i> 
+</p>
+
+
+<!-- Read More button -->
+<div class="mt-10 flex justify-center">
+  <div class="flex flex-col items-center w-full">
+    <button id="readMoreBtn" type="button"
+      class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primaryDark transition duration-300"
+      aria-expanded="false">
+      Read more | Darllen mwy
+      <i data-feather="arrow-down" class="ml-2"></i>
+    </button>
+
+    <!-- Full bio (LEFT ALIGNED) -->
+    <div id="fullBio" class="hidden mt-6 w-full text-left px-2 sm:px-0">
+<p>We know that next year's election will be a tough one for Labour. I took back my council seat of Caerau from the Liberal Democrats in 2012. I've always been elected with over 50% of the vote, rising to 74% in the last election. The rise of Reform makes it more urgent than ever 
+that we speak to Labour voters in our heartland areas, such as Caerau, Canton, Ely, Splott, Fairwater, Grangetown, Butetown and Penarth with a voice they recognise and with a record they respect. In an election in which every vote will count, I can help lead the campaign that will bring those votes to Labour.</p>
+</br>
+<p>As well as campaigning, I have more than a decade's experience of making decisions in local government. I have been in the Council Cabinet since 2014 in various roles, but I am particularly proud of my role supporting the Youth Service and providing vital benefit support to families. I know that being in power brings difficult choices, but that our values are always our best guide. I also support further devolution to the Senedd and the full enactment of Gordon Brown's review and the devolution of the Youth Justice and Probation Service and control of the Crown Estates.</p>
+</br>
+<p>Beyond politics, I live with my wife and two children on the outskirts of Ely in Cardiff West and I’m proud that despite me being an English speaker my children are being educated in the medium of Welsh in a school in Fairwater.  I have been a long time supporter and sufferer of Cardiff City Football Club, Caerau Ely FC and RFC as well as Glamorgan Cricket Club as well as the Welsh National Football and Rugby Team.</p> 
+</br>
+<p><i>Rydym yn gwybod y bydd etholiad y flwyddyn nesaf yn un anodd i’r Blaid Lafur. Cymerais fy sedd cyngor yn ôl yng Nghaerau oddi wrth y Democratiaid Rhyddfrydol yn 2012. Rwyf bob tro wedi cael fy ethol gyda dros 50% o’r bleidlais, gan godi i 74% yn yr etholiad diwethaf. Mae’r cynnydd yn y gefnogaeth i Reform yn golygu ei bod yn fwy pwysig nag erioed ein bod yn siarad â phleidleiswyr Llafur yn ein hardaloedd craidd, megis Caerau, Treganna, Trelai, 
+Sblot, y Tyllgoed, Grangetown, Butetown a Phenarth gyda llais y maent yn ei adnabod ac â record y maent yn ei barchu. Mewn etholiad lle bydd pob pleidlais yn cyfrif, gallaf helpu i arwain yr ymgyrch fydd yn dod â’r pleidleisiau hynny i’r Blaid Lafur.</i></p>
+</br>
+<p><i>Yn ogystal ag ymgyrchu, mae gennyf dros ddegawd o brofiad o wneud penderfyniadau oddi fewn llywodraeth leol. Rwyf wedi bod yn aelod o Gabinet y Cyngor ers 2014 mewn amryw o rolau ond rwy’n arbennig o falch o fy rôl yn cefnogi’r Gwasanaeth Ieuenctid ac yn darparu cymorth budd-daliadau hanfodol i deuluoedd. Rwy’n gwybod fod bod mewn grym yn dod â dewisiadau anodd, ond mai ein gwerthoedd yw’r arweiniad gorau bob amser. Rwyf hefyd yn cefnogi datganoli pellach i’r Senedd ac i weithredu adolygiad Gordon Brown yn llawn, gan gynnwys datganoli’r Gwasanaeth Cyfiawnder Ieuenctid a Phrawf a heolaeth dros Ystad y Goron.</i></<p>
+</br>
+<p><i>Y tu hwnt i wleidyddiaeth, rwy’n byw gyda fy ngwraig a’n dau o blant ar gyrion Trelai yng Ngorllewin Caerdydd ac rwy’n falch, er fy mod yn siaradwr Saesneg, bod fy mhlant yn cael eu haddysgu drwy gyfrwng y Gymraeg mewn ysgol yn y Tyllgoed. Rwyf wedi bod yn gefnogwr ac yn ddioddefwr ers amser maith i Glwb Pêl-droed Dinas Caerdydd, Clwb Pêl-droed a Chlwb Rygbi Caerau Trelái yn ogystal â Chlwb Criced Morganwg yn ogystal â Thîm Pêl-droed a Rygbi Cenedlaethol Cymru.</i></p>  
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Video -->
+      <div data-aos="fade-left" class="flex flex-col w-full">
+        <div class="relative w-full" style="padding-top: 56.25%; min-height: 350px;">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
+            src="https://www.youtube.com/embed/6AwbNbDzlRM"
+            title="Main video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <!-- Caption -->
+        <p class="mt-2 text-gray-600 text-center text-sm italic">
+          Peter launches his campaign | <i>Mae Peter yn lansio ei ymgyrch</i>
+        </p>
+
+<!-- More Videos button -->
+<div class="mt-10 flex justify-center">
+  <div class="flex flex-col items-center w-full">
+    <button id="moreVideosBtn" type="button"
+      class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primaryDark transition duration-300"
+      aria-expanded="false">
+      More videos | Mwy o fideos
+      <i data-feather="arrow-down" class="ml-2"></i>
+    </button>
+
+    <!-- Extra videos -->
+    <div id="moreVideos" class="hidden mt-6 grid grid-cols-1 gap-6 w-full px-2 sm:px-0">
+      <!-- Extra video 1 -->
+      <div class="flex flex-col w-full">
+        <div class="relative w-full" style="padding-top: 56.25%;">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Extra video 1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="mt-2 text-gray-600 text-center text-sm italic">
+          Peter welcomes union backing | Mae Peter yn croesawu cefnogaeth undeb
+        </p>
+      </div>
+
+      <!-- Extra video 2 -->
+      <div class="flex flex-col w-full">
+        <div class="relative w-full" style="padding-top: 56.25%;">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            title="Extra video 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="mt-2 text-gray-600 text-center text-sm italic">
+          Peter talks about his pledges | Mae Peter yn siarad am ei addewidion
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Pledges Section -->
+<section id="pledges" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-up">
+                My Pledges | <i>Fy Addewidion</i>
+            </h2>
+            <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-500" data-aos="fade-up" data-aos-delay="100">
+                Peter is fighting for policies that will make a real difference in people's lives. </br> <i>Mae Peter yn ymladd dros bolisïau a fydd yn gwneud gwahaniaeth gwirioneddol ym mywydau pobl.</i>
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Education Card -->
+            <div class="policy-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 rounded-full w-12 h-12 bg-[#662381]"></div>
+                        <h3 class="ml-4 text-lg font-medium text-gray-900">Prioritise helping constituents <i>(Blaenoriaethu helpu etholwyr)</i></h3>
+                    </div>
+                    <p class="mt-4 text-base text-gray-500">
+                        I will run and operate a strong constituency office that will put casework at the heart of my work and be as accessible a Senedd Member as I am a Councillor.  
+                    </p>
+<p class="mt-4 text-base text-gray-500"><i>Byddaf yn rhedeg ac yn gweithredu swyddfa etholaeth gref a fydd yn rhoi delio â phroblemau a gwaith achos wrth wraidd fy ngwaith ac yn Aelod Senedd yr un mor hygyrch ag yr oeddwn yn Gynghorydd.</i></p>
+                </div>
+            </div>
+
+            <!-- Economy Card -->
+            <div class="policy-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 rounded-full w-12 h-12 bg-[#F39206]"></div>
+                        <h3 class="ml-4 text-lg font-medium text-gray-900">Support further devolution <i>(Cefnogi datganoli pellach)</i></h3>
+                    </div>
+                    <p class="mt-4 text-base text-gray-500">
+                        I will support further devolution to the Senedd and the enactment of Gordon Brown's review. With greater powers and the red Welsh way, we can build on our great legacy in Wales.
+                    </p>
+<p class="mt-4 text-base text-gray-500"><i>Byddaf yn cefnogi datganoli pellach i’r Senedd ac i weithredu adolygiad Gordon Brown. Gyda mwy o bwerau a'r ffordd goch Gymreig, gallwn adeiladu ar ein hetifeddiaeth fawr yng Nghymru.</i>  
+</p>
+                </div>
+            </div>
+
+            <!-- Healthcare Card -->
+            <div class="policy-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 rounded-full w-12 h-12 bg-[#1D70B8]"></div>
+                        <h3 class="ml-4 text-lg font-medium text-gray-900">Work with the community <i>(Gweithio gyda'r gymuned)</i></h3>
+                    </div>
+                    <p class="mt-4 text-base text-gray-500">
+                        I will work alongside community and sporting groups of Caerdydd Penarth as I have done as a local councillor in Cardiff West.
+                    </p>
+<p class="mt-4 text-base text-gray-500">Byddaf yn ymroi i weithio gyda grwpiau cymunedol a chwaraeon Caerdydd Penarth fel y gwneuthum fel cynghorydd lleol yng Ngorllewin Caerdydd.</p>
+                </div>
+            </div>
+
+            <!-- Climate Card -->
+            <div class="policy-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" data-aos="fade-up" data-aos-delay="500">
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 rounded-full w-12 h-12 bg-[#3BAA35]"></div>
+                        <h3 class="ml-4 text-lg font-medium text-gray-900">Fight extremist politics <i>(Ymladd gwleidyddiaeth eithafol)</i></h3>
+                    </div>
+                    <p class="mt-4 text-base text-gray-500">
+                        I will strongly campaign against the Populist Right in this area and beyond as I have successfully done in Caerau as a Councillor.  
+                    </p>
+<p class="mt-4 text-base text-gray-500">Byddaf yn ymgyrchu’n gryf yn erbyn y Dde Popiwlistaidd yn yr ardal yma ac ymhellach, fel y gwneuthum yn llwyddiannus yng Nghaerau fel Cynghorydd.</p>
+                </div>
+            </div>
+
+            <!-- Housing Card -->
+            <div class="policy-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" data-aos="fade-up" data-aos-delay="600">
+                <div class="p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 rounded-full w-12 h-12 bg-[#E5007D]"></div>
+                        <h3 class="ml-4 text-lg font-medium text-gray-900">More affordable housing <i>(Mwy o dai fforddiadwy)</i></h3>
+                    </div>
+                    <p class="mt-4 text-base text-gray-500">
+                        Improve access to safe, affordable housing so families have stability and security.
+                    </p>
+<p class="mt-4 text-base text-gray-500">Gwella mynediad at gartrefi diogel a fforddiadwy er mwyn i deuluoedd gael sefydlogrwydd a diogelwch.<p>
+                </div>
+            </div>
+
+            <!-- Safety Card -->
+            <div class="policy-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" data-aos="fade-up" data-aos-delay="700">
+                <div class="p-6">
+                    <div class="flex items-center">
+        <div class="flex-shrink-0 rounded-full w-12 h-12 bg-[#E4003B]"></div>
+                        <h3 class="ml-4 text-lg font-medium text-gray-900">Reduce child poverty <i>(Lleihau tlodi plant)</i></h3>
+                    </div>
+                    <p class="mt-4 text-base text-gray-500">
+                        I will campaign to give more opportunities for young people and to try and reduce Child Poverty.
+                    </p>
+      <p class="mt-4 text-base text-gray-500">Byddaf yn ymgyrchu i roi mwy o gyfleoedd i bobl ifanc ac i geisio leihau Tlodi Plant.</p>  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- CTA Section -->
+    <section class="bg-primary">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl" data-aos="fade-right">
+                <span class="block">Want to help our campaign? </br><i>Eisiau helpu ein hymgyrch?</i></span></br>
+                <span class="block text-primaryLight">Together, we can make a difference. </br><i>Gyda'n gilydd, gallwn wneud gwahaniaeth.</i></span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0" data-aos="fade-left">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50">
+                        Get In Touch | Cysylltwch â Ni
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- People Section -->
+<section id="people" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-up">
+                What People Are Saying | <i>Beth Mae Pobl yn ei Ddweud</i>
+            </h2>
+            <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-500" data-aos="fade-up" data-aos-delay="100">
+                Hear from community leaders and local people who are supporting our campaign. </br><i>Clywch gan arweinwyr cymunedol a phobl leol sy'n cefnogi ein hymgyrch.</i>
+            </p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
+                <img class="h-24 w-24 mx-auto rounded-full mb-4" src="http://static.photos/people/200x200/1" alt="Kevin Brennan">
+                <h4 class="text-lg font-medium text-gray-900">Kevin Brennan</h4>
+                <p class="text-gray-500 mb-4">Former MP for Cardiff West</p>
+                <p class="text-gray-600">
+			“I’ve known Peter since he was 18 years old and he is rooted in the community. He was a valuable adviser to me and he is a natural pro devolutionist in the mould of Rhodri Morgan and Mark Drakeford. He would be an authentic working class voice in the Senedd.”
+                </p><br>
+<p class="text-gray-600"><i>
+“Rydw i wedi adnabod Peter ers pan oedd e’n 18 oed. Roedd e’n gynghorydd gwerthfawr i mi ac mae e’n gefnogwr naturiol i ddatganoli yn null Rhodri Morgan a Mark Drakeford. Byddai e’n llais dosbarth gweithiol dilys yn y Senedd.”</i></p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="300">
+                <img class="h-24 w-24 mx-auto rounded-full mb-4" src="http://static.photos/people/200x200/2" alt="Elaine Simmons">
+                <h4 class="text-lg font-medium text-gray-900">Elaine Simmons</h4>
+                <p class="text-gray-500 mb-4">Councillor for Caerau</p>
+                <p class="text-gray-600">
+“Having seen Peter up close and personal, as his ward colleague I can say he never stops working hard to improve the lives of the people he has been elected to serve. He would be a great Senedd Member.“
+                </p><br>
+<p class="text-gray-600"><i>
+“Ar ôl gweld Peter yn agos ac yn bersonol, fel ei gydweithiwr yn y ward, gallaf ddweud nad yw byth yn rhoi'r gorau i weithio'n galed i wella bywydau'r bobl y mae wedi cael ei ethol i'w gwasanaethu. Byddai'n Aelod Senedd gwych.“</i></p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="400">
+                <img class="h-24 w-24 mx-auto rounded-full mb-4" src="http://static.photos/people/200x200/3" alt="Gareth West">
+                <h4 class="text-lg font-medium text-gray-900">Gareth West</h4>
+                <p class="text-gray-500 mb-4">Caerau Ely AFC junior football coach</p>
+                <p class="text-gray-600">
+                    "I've seen Peter's commitment to grass roots sports first hand. I know Peter will work hard to get more children and young people involved in playing sports and off of our streets." 
+                </p><br>
+  <p class="text-gray-600"><i>
+"Rydw i wedi gweld ymrwymiad Peter i chwaraeon ar lawr gwlad yn uniongyrchol. Dw i'n gwybod y bydd Peter yn gweithio'n galed i gael mwy o blant a phobl ifanc i gymryd rhan mewn chwarae chwaraeon ac oddi ar ein strydoedd."</i></p>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Endorsers Section -->
+    <section id="endorsers" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-up">
+                    Union Endorsements | <i>Cymeradwyaethau Undeb</i>
+                </h2>
+                <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-500" data-aos="fade-up" data-aos-delay="100">
+                    Proudly supported by working people and their unions. </BR><i>Wedi'i gefnogi'n falch gan bobl sy'n gweithio a'u hundebau.</i>
+                </p>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-3">
+                <!-- Union 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img class="w-full h-48 object-contain p-4" src="https://i.imgur.com/Rb2LdWL.png" alt="Union logo">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Unite</h3>
+                        <p class="mt-2 text-gray-600">
+                            Unite is the largest trade union in the UK and Ireland with members across the private, public and voluntary sectors. <br></br><i>Unite yw'r undeb llafur mwyaf yn y DU ac Iwerddon gydag aelodau ar draws y sectorau preifat, cyhoeddus a gwirfoddol.</i>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Union 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <img class="w-full h-48 object-contain p-4" src="https://i.imgur.com/MaqHcwZ.png" alt="Union logo">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">USDAW</h3>
+                        <p class="mt-2 text-gray-600">
+                            USDAW is one of the UK's largest trade unions. They represent workers in sectors such as retail, distribution, manufacturing, and food services.<br></br><i>Mae USDAW yn un o undebau llafur mwyaf y DU. Maent yn cynrychioli gweithwyr mewn sectorau fel manwerthu, dosbarthu, gweithgynhyrchu a gwasanaethau bwyd.</i>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Union 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <img class="w-full h-48 object-contain p-4" src="https://i.imgur.com/N4eyKdp.png" alt="Union logo">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">CWU</h3>
+                        <p class="mt-2 text-gray-600">
+                            The Communication Workers Union is the biggest union for the communications industry with approximately 185,000 members. <br></br><i>Undeb y Gweithwyr Cyfathrebu yw'r undeb mwyaf yn y diwydiant cyfathrebu gyda thua 185,000 o aelodau.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+                <div class="mb-12 lg:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Get In Touch | <i>Cysylltwch â Ni</i>
+                    </h2>
+                    <p class="mt-3 text-lg text-gray-500">
+                        Have questions or want to get involved? We'd love to hear from you. </br><i>Oes gennych chi gwestiynau neu eisiau cymryd rhan? Byddem wrth ein bodd yn clywed gennych chi.</i>
+                    </p>
+                    <div class="mt-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i data-feather="mail" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Email | <i>Ebost</i></h3>
+                                <p class="mt-1 text-gray-600">PeterBradbury4CaerdyddPenarth@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-start">
+                            <div class="flex-shrink-0">
+                                <i data-feather="phone" class="h-6 w-6 text-primary"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Phone | <i>Ffôn</i></h3>
+                                <p class="mt-1 text-gray-600">07973179577</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-lg font-medium text-gray-900">Follow Us | <i>Dilynwch Ni</i></h3>
+                        <div class="mt-4 flex space-x-6">
+                            <a href="https://www.facebook.com/peter.bradbury1" class="text-gray-400 hover:text-primary">
+                                <i data-feather="facebook" class="h-6 w-6"></i>
+                            </a>
+                            <a href="https://x.com/pebradbury" class="text-gray-400 hover:text-primary">
+                                <i data-feather="twitter" class="h-6 w-6"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+<div data-aos="fade-left">
+    <!-- Contact Form Header -->
+    <div class="mb-6">
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            Contact form | <i>Ffurflen gyswllt</i>
+        </h2>
+        <p class="mt-3 text-lg text-gray-500">
+            Using this contact form will open your preferred email client or provider.<br><i>Bydd defnyddio'r ffurflen gyswllt hon yn agor eich defnyddwyr neu ddarparwyr e-bost sydd ar gael.</i>
+        </p>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="PeterBradbury4CaerdyddPenarth@gmail.com" method="POST" class="grid grid-cols-1 gap-y-6">
+        <div>
+            <label for="name" class="sr-only">Full name</label>
+            <input type="text" name="name" id="name" autocomplete="name" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded-md" placeholder="Full name | Enw llawn">
+        </div>
+
+        <div>
+            <label for="message" class="sr-only">Message</label>
+            <textarea id="message" name="message" rows="4" class="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded-md" placeholder="Message | Neges"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary hover:bg-primaryDark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                Submit | Cyflwyno
+            </button>
+        </div>
+    </form>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white flex-shrink-0">
+  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <!-- Copyright -->
+    <div class="border-t border-gray-800 pt-4 text-center">
+      <p class="text-base text-gray-400">
+        © 2025 Peter Bradbury. All Rights Reserved. Promoted by Peter Bradbury at 10 Yarrow Close, Cardiff, CF5 4QS.
+        <br><i>© 2025 Peter Bradbury. Hawlfraint i gyd wedi'u cadw. Hyrwyddwyd gan Peter Bradbury yn 10 Yarrow Close, Caerdydd, CF5 4QS.</i>
+      </p>
+
+      <!-- Privacy Policy Link -->
+      <button id="privacyToggle" class="mt-6 text-sm text-gray-400 hover:text-white hover:underline focus:outline-none">
+        Privacy policy | Polisi preifatrwydd
+      </button>
+
+      <!-- Privacy Policy Content -->
+    <div id="privacyContent" class="hidden mt-4 text-gray-300 text-sm max-w-3xl mx-auto text-left space-y-6">
+
+  <h1 class="text-lg font-semibold underline">Your Privacy Matters</h1>
+  <p>This policy explains how your personal information is collected and used by <strong>Peter Bradbury</strong>, a political candidate standing for election in the United Kingdom.</p>
+  <p>Whether you’re visiting this website, signing up for updates, completing a survey or getting in touch, this notice tells you what happens with your information and how your privacy is protected.</p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Who This Covers</h2>
+  <p>This policy applies to anyone who interacts with Peter Bradbury’s campaign – including website visitors, email subscribers, survey participants and those who get in touch to raise local or political issues.</p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Who Is Responsible for Your Data?</h2>
+  <p>Peter Bradbury is the <strong>data controller</strong> – that means he is responsible for how your personal data is collected, stored and used. All personal data is handled in accordance with:</p>
+  <ul class="list-disc list-inside space-y-1">
+    <li>The <strong>UK General Data Protection Regulation (UK GDPR)</strong></li>
+    <li>The <strong>Data Protection Act 2018</strong></li>
+    <li>Other relevant UK privacy laws, including those covering electronic communications</li>
+  </ul>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">The Data We Collect</h2>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Your name</li>
+    <li>Email address or phone number</li>
+    <li>Postal address (for local outreach)</li>
+    <li>Views, opinions, or survey responses</li>
+    <li>Technical data like IP address or browser type (when visiting the website)</li>
+    <li>Your communication preferences (e.g., if you want to receive campaign updates)</li>
+  </ul>
+  <p>You are never under any obligation to provide personal information, but doing so may help Peter Bradbury keep you informed or respond to your concerns.</p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Why Your Data Is Used</h2>
+  <ul class="list-disc list-inside space-y-1">
+    <li>To send campaign updates, newsletters or local information (with your consent)</li>
+    <li>To gather views on local or national issues (e.g., via surveys)</li>
+    <li>To respond to messages, questions or requests from you</li>
+    <li>To understand voter interests and improve campaign activities</li>
+    <li>To ensure the website is functioning properly and securely</li>
+  </ul>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Legal Basis for Using Your Data</h2>
+  <ul class="list-disc list-inside space-y-1">
+    <li><strong>Your consent</strong> – for example, if you’ve signed up to receive campaign emails</li>
+    <li><strong>Legitimate interests</strong> – such as promoting democratic engagement, staying in touch with voters or communicating political views, provided your rights and freedoms are not overridden</li>
+    <li><strong>Legal obligations</strong> – if required by law (for example, for electoral transparency)</li>
+  </ul>
+  <p>You can withdraw your consent at any time by getting in touch using the details at the end of this page.</p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Surveys and Feedback</h2>
+  <p>If you fill in a campaign survey or give your opinion on an issue, the data you provide may be used to:</p>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Understand what matters most to local residents</li>
+    <li>Shape campaign messaging and policy priorities</li>
+  </ul>
+  <p>Survey data is anonymised where possible. Personal details you provide (such as your name or contact info) will not be shared or published without your permission.</p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Email Updates and Campaign News</h2>
+  <ul class="list-disc list-inside space-y-1">
+    <li>You’ll receive information about the campaign, local issues, or upcoming events</li>
+    <li>You can unsubscribe at any time by clicking the link in any email or contacting us directly</li>
+    <li>Your details will <strong>never</strong> be sold or passed to third parties for marketing</li>
+  </ul>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Website Use and Cookies</h2>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Your IP address</li>
+    <li>Device or browser type</li>
+    <li>Pages viewed</li>
+    <li>Cookie preferences</li>
+  </ul>
+  <p>This information helps improve the performance and security of the website. Cookies are only used with your consent, and you can manage them through your browser settings at any time.</p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Sharing Your Data</h2>
+  <h3 class="text-sm font-semibold underline">Technology providers</h3>
+  <p>We work with trusted companies to host or manage this website and campaign tools. They only use your data under instruction and never for their own purposes.</p>
+
+  <h3 class="text-sm font-semibold underline">Regulatory bodies</h3>
+  <p>We may disclose your information if required to comply with legal or electoral rules.</p>
+
+  <h3 class="text-sm font-semibold underline">Volunteers and campaign team</h3>
+  <p>If campaign volunteers need to contact you (e.g., for outreach), your details may be shared securely and only when necessary.</p>
+
+  <p><strong>Your information will never be sold or shared for commercial gain.</strong></p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">How Long Your Data Is Kept</h2>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Email sign-ups are retained until you unsubscribe</li>
+    <li>Survey data is kept only while relevant to the campaign</li>
+    <li>Website technical data is stored briefly for analytics or security</li>
+  </ul>
+  <p>Old or unnecessary information is securely deleted.</p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Your Data Rights</h2>
+  <ul class="list-disc list-inside space-y-1">
+    <li><strong>Access</strong> your personal data</li>
+    <li><strong>Correct</strong> any errors in the data we hold</li>
+    <li><strong>Request deletion</strong> of your data</li>
+    <li><strong>Object</strong> to certain uses (like marketing)</li>
+    <li><strong>Withdraw consent</strong> at any time</li>
+    <li><strong>Complain</strong> to the Information Commissioner’s Office if you're unhappy</li>
+  </ul>
+  <p>To exercise these rights, use the contact details below. We may need to confirm your identity before fulfilling some requests.</p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Get in Touch</h2>
+  <p>If you have any questions or wish to update your preferences, contact the campaign:</p>
+  <p>📧 <strong>Email:</strong> <a href="mailto:PeterBradbury4CaerdyddPenarth@gmail.com">PeterBradbury4CaerdyddPenarth@gmail.com</a></p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Complaints and Further Help</h2>
+  <p>If you're unhappy with how your data has been handled, you can contact the <strong>Information Commissioner’s Office (ICO)</strong>:</p>
+  <p>🌐 <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">www.ico.org.uk</a><br>
+  📞 0303 123 1113</p>
+
+  <hr class="border-gray-700">
+
+  <h2 class="text-base font-semibold underline">Changes to This Policy</h2>
+  <p>This privacy policy may be updated to reflect campaign changes, technology updates, or new legal requirements. The most recent version will always be available on this website.</p>
+
+</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Toggle Privacy Policy
+  document.getElementById('privacyToggle').addEventListener('click', () => {
+    const content = document.getElementById('privacyContent');
+    content.classList.toggle('hidden');
+    if (!content.classList.contains('hidden')) {
+      content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+</script>
+
+
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        feather.replace();
+
+        // Mobile menu toggle
+        document.querySelector('[aria-controls="mobile-menu"]').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Vanta.js background
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xe4003b,
+            shininess: 35.00,
+            waveHeight: 15.00,
+            waveSpeed: 0.75,
+            zoom: 0.8
+        });
+
+       document.addEventListener('DOMContentLoaded', () => {
+  // Buttons and targets (IDs must match HTML above)
+  const configs = [
+    { btnId: 'readMoreBtn', targetId: 'fullBio' },
+    { btnId: 'moreVideosBtn', targetId: 'moreVideos' }
+  ];
+
+  configs.forEach(({ btnId, targetId }) => {
+    const btn = document.getElementById(btnId);
+    const target = document.getElementById(targetId);
+    if (!btn || !target) {
+      // defensive: log but don't throw
+      console.warn('Missing element for toggle:', btnId, targetId);
+      return;
+    }
+
+    btn.addEventListener('click', () => {
+      const isHidden = target.classList.toggle('hidden'); // toggles hidden; returns true if now hidden
+      const expanded = !isHidden;
+      btn.setAttribute('aria-expanded', expanded);
+
+      // flip the feather icon inside the button
+      const icon = btn.querySelector('i[data-feather]');
+      if (icon) icon.setAttribute('data-feather', expanded ? 'arrow-up' : 'arrow-down');
+
+      // re-render feather icons (safe-guard if feather exists)
+      if (window.feather && typeof feather.replace === 'function') {
+        feather.replace();
+      }
+
+      // when opening, scroll the revealed section into view a little
+      if (expanded) {
+        // use a tiny timeout to allow layout change, then scroll
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    });
+  });
+});
+    </script>
+</body>
+</html>
